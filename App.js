@@ -4,7 +4,7 @@ const drag = (event) => {
   setTimeout(() => {
     event.target.className = " hide";
   }, 0);
-};
+}; 
 const dragEnd = (event) => {
   event.target.className = " taskpara";
 };
