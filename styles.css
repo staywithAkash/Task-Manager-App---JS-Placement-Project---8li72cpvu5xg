@@ -6,7 +6,7 @@
 body{
     background-color: rgb(79, 104, 119);
 }
-section,h3,#listpara{
+section,h3{
     margin: 0.5rem;
     padding: 0.3rem;
 }
@@ -14,13 +14,18 @@ section,h3,#listpara{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 20px;
+}
+#copyText,#description{
+    width: 100%; 
 }
 .heading{
     display: flex;
     flex-wrap: wrap;
-    height: 10rem;
+    height: 5rem;
     align-items: center;
     justify-content: center;
+    font-size: 25px;
 }
 .section{
     display: flex;
@@ -29,7 +34,7 @@ section,h3,#listpara{
     justify-content: space-evenly;
 }
 .sec-1,.sec-2,.sec-3,.sec-4{
-width: 20vw;
+width: 23vw;
 background-color: #fff;   
 justify-content: space-around;
 margin: 0.3rem;
@@ -71,4 +76,6 @@ margin: 0.3rem;
 }
 .taskpara{
     display:block;
+    width: 100%;
+    word-break: break-all;
 }

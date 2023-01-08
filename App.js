@@ -1,7 +1,7 @@
 let lielement = null;
 const drag = (event) => {
   lielement = event.target;
-  setTimeout(() => {
+  setTimeout((event) => {
     event.target.className = " hide";
   }, 0);
 };
@@ -22,18 +22,18 @@ taskb.addEventListener("click", (e) => {
   let para = document.createElement("li");
   let para2=document.createElement("textarea");
   para2.setAttribute("type","text");
-  para2.className="taskpara";
+  para2.id="description";
   para.textContent = copytask;
   para.className = "taskpara";
   para.setAttribute("draggable", "true");
   para.style.border = "2px solid #80898a";
   para.style.backgroundColor = "#acbfc2";
-  para.style.margin = "1px";
+  para.style.marginTop = "2px";
   para.addEventListener("dragstart", drag);
   para.addEventListener("dragend", dragEnd);
   let addpara = document.getElementById("listpara");
-  addpara.appendChild(para);
   para.appendChild(para2);
+  addpara.appendChild(para);
 });
 
 //drop the task
